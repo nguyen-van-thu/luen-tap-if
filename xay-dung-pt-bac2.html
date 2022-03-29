@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xay-dung-pt-bac-2</title>
+</head>
+<body>
+<p>XD phuong trinh bac2</p>
+<input id="a" type="text">x2+
+<input id="b" type="text">x+
+<input id="c" type="text">=0
+<button onclick="tinh()">ketqua</button>
+<script>
+    function tinh() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        let delta = b * b - 4 * a * c
+        if (delta < 0) {
+            document.write("phương trình vô nghiệm");
+            //document.getElementById("delta").innerHTML;
+        } else if (delta === 0) {
+            document.write("phương trình có nghiệm kép x1 = x2 = " + (-b/2*a));
+            //let b = document.getElementById("b").innerHTML
+        } else {
+            document.write("phương trình có 2 nghiệm x1 =" + ((-b+Math.sqrt(delta))/2*a) + " x2 = "+ ((-b-Math.sqrt(delta))/2*a));
+        }
+
+
+
+
+    }
+</script>
+
+</body>
+</html>

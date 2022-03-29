@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xay-dung-bac-22</title>
+</head>
+<body>
+<p>xay-dung-pt-bac22</p>
+<input id="1" type="text">x2+
+<input id="2" type="text">x+
+<input id="3" type="text">=
+<button onclick="tinhtoan()">tinh</button>
+<script>
+    function tinhtoan(){
+        let a = document.getElementById("1").value;
+        let b = document.getElementById("2").value;
+        let c = document.getElementById("3").value;
+        let delta = b*b-4*a*c;
+       if (delta > 0){
+           document.write("pt no nghiem");
+       }else if (delta ===0){
+           document.write("pt co nghiem x1 = x2 = " + (-b/2*a));
+       }else {
+           document.write("phuong trinh cos 2 nghiem  x1 = " +((-b+Math.sqrt(delta))/2*a ) + " x2 = " + ((-b-Math.sqrt(delta))/2*a));
+       }
+
+    }
+
+
+</script>
+
+
+</body>
+</html>
